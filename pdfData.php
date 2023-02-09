@@ -87,7 +87,7 @@
 
 //$pdf->SetFillColor(230,230,0);  // back color
 //$pdf->AddLink();
-//$pdf->SetLink( 'http://www.fpdf.org/')
+//$pdf->SetLink( 'http://www.fpdf.org/');
 
         $pdf->Output();
     }
