@@ -28,7 +28,7 @@
 
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLsM-_AtQRh-8Uo34H6CUG37XiUNxHaT0&callback=myMap"></script>
 
 </body>
 </html>
