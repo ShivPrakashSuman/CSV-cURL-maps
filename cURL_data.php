@@ -17,7 +17,11 @@ curl_setopt($ch, CURLOPT_URL, $url);
  
 $result = curl_exec($ch);
  
-echo $result;
+if($result){
+	$res = json_decode($result); 
+	
+	print_R($res->hits[0]->webformatURL);die;
+}
 
 curl_close( $ch );
  
