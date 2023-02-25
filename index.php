@@ -32,7 +32,7 @@
             </div>
         </div> 
           <center style="font-family: Times New Roman;">
-            <h1><b>Image Finder Tool</b></h1> 
+            <h1><b>Image Finder Tool </b>(Javacript)</h1> 
             <div class="input-group mt-4" style="width:50%;">
               <input type="text" id="word" class="form-control rounded" placeholder="Search.." aria-label="Search" aria-describedby="search-addon" />
               <button type="button" onclick="searchClick()" class="btn btn-outline-primary">SEARCH</button>
@@ -42,7 +42,7 @@
           </center>       
     </form>
         <center style="font-family: Times New Roman;">
-            <h1><b>Image Finder Tool</b></h1> 
+            <h1><b>Image Finder Tool </b>(php - cURL)</h1> 
               <form action="cURL_data.php" method="GET">
                 <div class="input-group mt-4" style="width:50%;">
                   <input  type="search"name="search"  class="form-control rounded" placeholder="Search.." value="<?php //echo $_GET['search']; ?>"/>
