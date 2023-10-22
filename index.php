@@ -13,34 +13,37 @@
 <body>
  
   <div class="container">
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <div class="row">
-          <div class="col-sm-12 p-4">
-              <a href="dataList.php" class="btn btn-info"> <i class="fa fa-forward"></i> Data List</a>
-            <div class="float-right mb-3">
+    <div class="row">
+      <div class="col-sm-12 p-4">
+        <a href="dataList.php" class="btn btn-info"> <i class="fa fa-forward"></i> Data List</a>
+        <div class="float-right mb-3">
                 <a href="googleMap.php" class="btn btn-warning"><i class="fa fa-map-pin"></i> Google Maps </a>
             </div>
           </div>      
         </div>
-        <div class="input-group mb-5">
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFileInput" aria-describedby="customFileInput" name="file">
-                <label class="custom-file-label" for="customFileInput">Select file</label>
-            </div>
-            <div class="input-group-append">
-                <input type="submit" name="submit" value="Upload" class="btn btn-primary">
-            </div>
-        </div> 
-          <center style="font-family: Times New Roman;">
-            <h1><b>Image Finder Tool </b>(Javacript)</h1> 
-            <div class="input-group mt-4" style="width:50%;">
-              <input type="text" id="word" class="form-control rounded" placeholder="Search.." aria-label="Search" aria-describedby="search-addon" />
-              <button type="button" onclick="searchClick()" class="btn btn-outline-primary">SEARCH</button>
+        <center style="font-family: Times New Roman;">
+          <h1><b>CSV - Upload </b>(php)</h1> 
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+            <div class="input-group mb-5">
+                <div class="custom-file" style="text-align: left;">
+                    <input type="file" class="custom-file-input" id="customFileInput" aria-describedby="customFileInput" name="file">
+                    <label class="custom-file-label" for="customFileInput">Select file</label>
+                </div>
+                <div class="input-group-append">
+                    <input type="submit" name="submit" value="Upload" class="btn btn-primary">
+                </div>
+            </div> 
+          </form>
+        </center> 
+        <center style="font-family: Times New Roman;">
+          <h1><b>Image Finder Tool </b>(Javacript)</h1> 
+          <div class="input-group mt-4" style="width:50%;">
+            <input type="text" id="word" class="form-control rounded" placeholder="Search.." aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" onclick="searchClick()" class="btn btn-outline-primary">SEARCH</button>
 
-            </div>
-            <div id='result' class="row mt-5"></div>      
-          </center>       
-    </form>
+          </div>
+          <div id='result' class="row mt-5"></div>      
+        </center>       
         <center style="font-family: Times New Roman;">
             <h1><b>Image Finder Tool </b>(php - cURL)</h1> 
               <form action="cURL_data.php" method="GET">

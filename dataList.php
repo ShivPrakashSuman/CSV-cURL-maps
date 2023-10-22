@@ -36,6 +36,7 @@
             include('db.php');
             // Fetch records from database 
             $sql = "SELECT * FROM users ORDER BY id ASC"; 
+            
             $result = $conn->query($sql);
             if($result->num_rows > 0){ 
                 while($row = $result->fetch_assoc()){ 
