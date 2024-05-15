@@ -16,6 +16,7 @@
     <div class="row">
       <div class="col-sm-12 p-4">
         <a href="dataList.php" class="btn btn-info"> <i class="fa fa-forward"></i> Data List</a>
+        <a href="shatranj-board.php" class="btn btn-danger"> <i class="fa fa-forward"></i> Shatranj Board</a>
         <div class="float-right mb-3">
                 <a href="googleMap.php" class="btn btn-warning"><i class="fa fa-map-pin"></i> Google Maps </a>
             </div>
